@@ -5,15 +5,8 @@ import java.util.Scanner;
  * created by elena 14-06-2019
  */
 public class Magnitude {
-	public static void main(String[] args){
-		Scanner inputFirstNumber = new Scanner(System.in);
-		System.out.println("Enter the A Number:");
-		double aNumber = inputFirstNumber.nextDouble();
-
-		Scanner inputSecondNumber = new Scanner(System.in);
-		System.out.println("Enter the B Number:");
-		double bNumber = inputSecondNumber.nextDouble();
-
+	public static Scanner scanner = new Scanner(System.in);
+	public static void MagnitudeTwonNumber(double aNumber, double bNumber){
 		if(aNumber== 0 && bNumber == 0){
 			System.out.println("Output: 0");
 		}
@@ -28,5 +21,14 @@ public class Magnitude {
 		}else{
 			System.out.println("Invalida data");
 		}
+	}
+
+	public static void main(String[] args){
+		System.out.println("Enter the A Number:");
+		double aNumber = scanner.nextDouble();
+
+		System.out.println("Enter the B Number:");
+		double bNumber = scanner.nextDouble();
+		MagnitudeTwonNumber(aNumber,bNumber);
 	}
 }

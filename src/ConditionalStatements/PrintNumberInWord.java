@@ -5,14 +5,13 @@ import java.util.Scanner;
  * created by elena 14-06-2019
  */
 public class PrintNumberInWord {
+	public static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) {
 
-		Scanner selectVariant = new Scanner(System.in);
 		System.out.println("Select variant:");
 
-		int variant = selectVariant.nextInt();
-		Scanner enteredNumber = new Scanner(System.in);
-		int number = enteredNumber.nextInt();
+		int variant = scanner.nextInt();
+		int number = scanner.nextInt();
 
 		switch(variant){
 	case 1:
