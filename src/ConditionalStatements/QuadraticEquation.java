@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class QuadraticEquation {
 	public static Scanner scanner = new Scanner(System.in);
-	public static void QuadraticEquationOn(double aNumber,double bNumber, double cNumber){
+	public static void quadraticEquationOn(double aNumber,double bNumber, double cNumber){
 		if(aNumber == 0 && bNumber == 0 && cNumber ==0){
 			System.out.println("x can be any number. Result: 0");
 		}else if(aNumber == 0 && bNumber == 0){
@@ -45,7 +45,7 @@ public class QuadraticEquation {
 		System.out.println("Enter the C Number:");
 		double cNumber = scanner.nextDouble();
 
-		QuadraticEquationOn(aNumber,bNumber,cNumber);
+		quadraticEquationOn(aNumber,bNumber,cNumber);
 
 	}
 }

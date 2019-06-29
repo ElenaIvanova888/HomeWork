@@ -12,37 +12,37 @@ public class HomeWork_Java {
     public static final double INCHESMETERS = 39.37;
     public static final double KELVINES = 273.16;
 
-    static double Fahrenheit(double Celvin){
+    static double fahrenheit(double Celvin){
         return 9.0/5.0*Celvin+32;
     }
-    static double Kelvin(double Celvin){
+    static double kelvin(double Celvin){
          return Celvin + KELVINES;
     }
-    static double CelsiusConverting(double Fahrenheit){
+    static double celsiusConverting(double Fahrenheit){
          return 5.0/9.0*(Fahrenheit - 32);
     }
-    static double InchesConverting(double meters){
+    static double inchesConverting(double meters){
         return meters*INCHESMETERS;
     }
-    static double NewMeterConverting(double inchesNew){
+    static double newMeterConverting(double inchesNew){
         return inchesNew/INCHESMETERS;
     }
     static double KilometersConverting(double miles){
         return miles*KILOMETERSMILES;
     }
-    public static double MilesConverting(double kilometers){
+    public static double milesConverting(double kilometers){
         return kilometers/KILOMETERSMILES;
     }
-    public static double PoundConverting(double kilograms){
+    public static double poundConverting(double kilograms){
         return kilograms*POUNDSKILOGRAMS;
     }
-    public static double KilogramsFromPoundConverting(double pounds){
+    public static double kilogramsFromPoundConverting(double pounds){
        return pounds/POUNDSKILOGRAMS;
     }
-    public static double MilesConvertingForKM(double km){
+    public static double milesConvertingForKM(double km){
          return km*KILOMETERSNMILESPERSECONDS;
     }
-    public static double NewKMConverting(double mi){
+    public static double newKMConverting(double mi){
         return mi/KILOMETERSNMILESPERSECONDS;
     }
 
@@ -56,34 +56,34 @@ public class HomeWork_Java {
 
         double C = scanner.nextDouble();
 
-        System.out.println("Fahrenheit:"+Fahrenheit(C));
-        System.out.println("Kelvin:"+Kelvin(C));
+        System.out.println("Fahrenheit:"+fahrenheit(C));
+        System.out.println("Kelvin:"+kelvin(C));
 
 
         System.out.println("\nConverrt Fahrenheit to Celsius.\nEnter value Fahrenheit =");
         double F = scanner.nextDouble();
-        System.out.println("Celsius:"+CelsiusConverting(F));
+        System.out.println("Celsius:"+celsiusConverting(F));
 
         System.out.println("\nConvert meter to inches.\nEnter value meter =");
         double meters = scanner.nextDouble();
-        System.out.println("Inches:"+InchesConverting(meters));
-        System.out.println(NewMeterConverting(InchesConverting(meters)));
+        System.out.println("Inches:"+inchesConverting(meters));
+        System.out.println(newMeterConverting(inchesConverting(meters)));
 
 
         System.out.println("s\nConvert miles to kilometres.\nEnter value miles =");
         double miles = scanner.nextDouble();
         System.out.println("Kilometres:"+KilometersConverting(miles));
-        System.out.println(MilesConverting(KilometersConverting(miles)));
+        System.out.println(milesConverting(KilometersConverting(miles)));
 
         System.out.println("\nConvert kilograms to pounds.\nEnter value kilograms =");
         double kilograms = scanner.nextDouble();
-        System.out.println("Pounds:"+PoundConverting(kilograms));
-        System.out.println(KilogramsFromPoundConverting(PoundConverting(kilograms)));
+        System.out.println("Pounds:"+poundConverting(kilograms));
+        System.out.println(kilogramsFromPoundConverting(poundConverting(kilograms)));
 
         System.out.println("\nConvert speed km/hr to mi/hr.\nEnter value km/hr =");
         double km = scanner.nextDouble();
-        System.out.println("mi/hr :"+MilesConvertingForKM(km));
-        System.out.println(NewKMConverting(MilesConvertingForKM(km)));
+        System.out.println("mi/hr :"+milesConvertingForKM(km));
+        System.out.println(newKMConverting(milesConvertingForKM(km)));
     }
 
 }

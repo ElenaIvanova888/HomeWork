@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class CompareNumbers {
 	public static Scanner scanner = new Scanner(System.in);
-	public static void CompreNumbers(int firstNumber, int secondNumber){
+	public static void compreNumbers(int firstNumber, int secondNumber){
 		if(firstNumber > secondNumber){
 			System.out.println("The number "+firstNumber+" has the greatest value");
 		}else if(firstNumber < secondNumber) {
@@ -25,6 +25,6 @@ public class CompareNumbers {
 		System.out.println("Enter the Second Number:");
 		int secondNumber = scanner.nextInt();
 
-		CompreNumbers(firstNumber,secondNumber);
+		compreNumbers(firstNumber,secondNumber);
 	}
 }

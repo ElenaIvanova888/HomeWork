@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class Magnitude {
 	public static Scanner scanner = new Scanner(System.in);
-	public static void MagnitudeTwonNumber(double aNumber, double bNumber){
+	public static void magnitudeTwonNumber(double aNumber, double bNumber){
 		if(aNumber== 0 && bNumber == 0){
 			System.out.println("Output: 0");
 		}
@@ -29,6 +29,6 @@ public class Magnitude {
 
 		System.out.println("Enter the B Number:");
 		double bNumber = scanner.nextDouble();
-		MagnitudeTwonNumber(aNumber,bNumber);
+		magnitudeTwonNumber(aNumber,bNumber);
 	}
 }

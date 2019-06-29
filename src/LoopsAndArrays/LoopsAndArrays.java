@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class LoopsAndArrays {
 	public static Scanner scanner = new Scanner(System.in);
 
-	public static void Fibonachi(){
+	public static void fibonachi(){
 		int i0=1;
 		int i1=1;
 		int i2;
@@ -19,7 +19,7 @@ public class LoopsAndArrays {
 		}
 		System.out.println();
 	}
-	public static void MinElementMassiv(int[] massiv){
+	public static void minElementMassiv(int[] massiv){
 		int min,result;
 		min = massiv[0];
 		for(int i=1;i<massiv.length;i++){
@@ -29,7 +29,7 @@ public class LoopsAndArrays {
 		}
 		System.out.println(min);
 	}
-	public static int Converting(int result){
+	public static int converting(int result){
 		String result1 =Integer.toBinaryString(result);
 		int length = result1.length();
 		int resultString = 0;
@@ -41,7 +41,7 @@ public class LoopsAndArrays {
 		}
 		return resultString;
 	}
-	public static String BinaryAndAgain(int enteredNumber){
+	public static String binaryAndAgain(int enteredNumber){
 		int mas2[] = {0, 1};
 		int remainder;
 		String binary = "";
@@ -63,16 +63,16 @@ return binary;
 		System.out.println("Binary number");
 		int enteredNumber = 12;
 		System.out.print("Enter  Number: ");
-		BinaryAndAgain(enteredNumber);
+		binaryAndAgain(enteredNumber);
 
 		double result = 0;
-		for (int i = 0; i < BinaryAndAgain(enteredNumber).length(); i++)
-			result = result + Double.parseDouble(BinaryAndAgain(enteredNumber).substring(i, i + 1)) * Math.pow(2, i);
+		for (int i = 0; i < binaryAndAgain(enteredNumber).length(); i++)
+			result = result + Double.parseDouble(binaryAndAgain(enteredNumber).substring(i, i + 1)) * Math.pow(2, i);
 		System.out.print(" \nDecimal number: "+result);
 
 		System.out.println("Min element massiv");
 		int[] a={12, 4, 6, 3};
-		MinElementMassiv(a);
+		minElementMassiv(a);
 
 		System.out.println("Sort massiv");
 		int[] numbers = {2,5,3,47,4,22};
@@ -88,8 +88,7 @@ return binary;
 		System.out.print(Arrays.toString(numbers));
 
 		System.out.println("\nFibonachi");
-		Fibonachi();
-
+		fibonachi();
 		System.out.println("Enter word for reversing: ");
 		String enteredWord = scanner.next();
 		char[] string = enteredWord.toCharArray();

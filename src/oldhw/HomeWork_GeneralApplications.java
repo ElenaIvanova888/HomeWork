@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class HomeWork_GeneralApplications {
 
     public static Scanner scanner = new Scanner(System.in);
-    public static double MultipleChoice(int a, double b){
+    public static double multipleChoice(int a, double b){
         return (double) a - (double)(1.0/4.0)*b;
     }
-    public static double Conversions(double x, double y){
+    public static double conversions(double x, double y){
         return  Math.round(((y-x)/x) * 100);
     }
-    public static void ConvertingSeconds(double seconds){
+    public static void convertingSeconds(double seconds){
         double minutes = seconds/60.0;
         double hours = minutes/60.0;
         double days = seconds/86400.0;
@@ -26,7 +26,7 @@ public class HomeWork_GeneralApplications {
         System.out.println("Days:"+days);
         System.out.println("Reversed seconds "+newSecondsFromMinutes+" and "+newSecondsFromHours+" and "+newSecondsFromDays);
     }
-    public static void ConvertinTIme(int currentYear, int birthYear){
+    public static void convertinTIme(int currentYear, int birthYear){
         int years, weeks, daysAll,hoursAll,minutesAll, secondsAll;
 
         years=currentYear-birthYear;
@@ -50,11 +50,11 @@ public class HomeWork_GeneralApplications {
 
         System.out.println("Converrting seconds.\nEnter value seconds =");
         double seconds = scanner.nextDouble();
-        ConvertingSeconds(seconds);
+        convertingSeconds(seconds);
 
         int currentYear = 2019;
         int birthYear = 1996;
-        ConvertinTIme(currentYear,birthYear);
+        convertinTIme(currentYear,birthYear);
 
         System.out.println("Exercises with conversions");
 
@@ -64,11 +64,11 @@ public class HomeWork_GeneralApplications {
         System.out.println("Enter value y: ");
         double y = scanner.nextDouble();
 
-        System.out.println(Conversions(x,y));
+        System.out.println(conversions(x,y));
 
         System.out.println("Exercises with Multiple choice test score");
         int a = 6;
         double b = 3.4;
-        System.out.println(MultipleChoice(a,b));
+        System.out.println(multipleChoice(a,b));
     }
 }

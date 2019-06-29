@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class SolveEquation {
 	public static Scanner scanner = new Scanner(System.in);
-	public static void SolvingEquation(double aNumber, double bNumber){
+	public static void solvingEquation(double aNumber, double bNumber){
 		if(aNumber== 0 && bNumber == 0){
 			System.out.println("x can be any number");
 		}else if(bNumber == 0){
@@ -24,7 +24,7 @@ public class SolveEquation {
 		double aNumber = scanner.nextDouble();
 		System.out.println("Enter the B Number:");
 		double bNumber = scanner.nextDouble();
-		SolvingEquation(aNumber,bNumber);
+		solvingEquation(aNumber,bNumber);
 
 	}
 }
