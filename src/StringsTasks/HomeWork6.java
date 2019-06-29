@@ -7,7 +7,7 @@ public class HomeWork6 {
 	public static void main(String args[]){
 		System.out.println("Enter word or sentences: ");
 		String sentences = scanner.nextLine();
-		/**
+
 		System.out.println(sentences.toLowerCase());
 		System.out.println(sentences.toUpperCase());
 		char[] result = sentences.toCharArray();
@@ -30,7 +30,7 @@ public class HomeWork6 {
 		}
 		System.out.println("Count of words "+count);
 		System.out.println("Letter removal "+sentences.replaceAll("e",""));
-**/
+
 		String firstNumber = "";
 		String secondNumber = "";
 		String thirdNumber = "";
@@ -57,19 +57,19 @@ public class HomeWork6 {
 		val2 = Integer.parseInt(secondNumber);
 		val3 = Integer.parseInt(thirdNumber);
 		val4 = Integer.parseInt(lastNumber);
-		int result = val1*val2*val3;
+		int result1 = val1*val2*val3;
 		System.out.println(val1);
 		System.out.println(val2);
 		System.out.println(val3);
 		System.out.println(val4);
-		System.out.println("result: "+result);
-		if(result==val4){
+		System.out.println("result: "+result1);
+		if(result1==val4){
 			System.out.println("True");
 		}else{
 			System.out.println("False");
 		}
 
-/**		System.out.println("Square word patterns: ");
+	System.out.println("Square word patterns: ");
 		StringBuffer stringInBuf;
 		for(int i=0; i<sentences.length();i++){
 			stringInBuf = new StringBuffer();
@@ -88,6 +88,6 @@ public class HomeWork6 {
 			}
 			System.out.println(stringInBuf);
 		}
- **/
+
 	}
 }
