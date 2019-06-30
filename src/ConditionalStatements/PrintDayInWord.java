@@ -5,14 +5,13 @@ import java.util.Scanner;
  * created by elena 14-06-2019
  */
 public class PrintDayInWord {
+	public static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) {
 
-		Scanner selectVariant = new Scanner(System.in);
 		System.out.println("Select variant:");
 
-		int variant = selectVariant.nextInt();
-		Scanner enterdMonth = new Scanner(System.in);
-		int day = enterdMonth.nextInt();
+		int variant = scanner.nextInt();
+		int day = scanner.nextInt();
 
 		switch (variant) {
 			case 1:

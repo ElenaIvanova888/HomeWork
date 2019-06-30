@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 public class HomeWork_GeneralApplications {
 
-    public static void main(String[] args){
-
-        System.out.println("Exercises with time");
-
-        Scanner inputSeconds = new Scanner(System.in);
-
-        System.out.println("Converrting seconds.\nEnter value seconds =");
-        double seconds = inputSeconds.nextDouble();
+    public static Scanner scanner = new Scanner(System.in);
+    public static double multipleChoice(int a, double b){
+        return (double) a - (double)(1.0/4.0)*b;
+    }
+    public static double conversions(double x, double y){
+        return  Math.round(((y-x)/x) * 100);
+    }
+    public static void convertingSeconds(double seconds){
         double minutes = seconds/60.0;
         double hours = minutes/60.0;
         double days = seconds/86400.0;
@@ -20,13 +20,13 @@ public class HomeWork_GeneralApplications {
         double newSecondsFromHours = Math.round(hours*3600.0);
         double newSecondsFromDays = Math.round(days*86400.0);
 
+
         System.out.println("Minutes:"+minutes);
         System.out.println("Hours:"+hours);
         System.out.println("Days:"+days);
         System.out.println("Reversed seconds "+newSecondsFromMinutes+" and "+newSecondsFromHours+" and "+newSecondsFromDays);
-
-        int currentYear = 2019;
-        int birthYear = 1996;
+    }
+    public static void convertinTIme(int currentYear, int birthYear){
         int years, weeks, daysAll,hoursAll,minutesAll, secondsAll;
 
         years=currentYear-birthYear;
@@ -43,25 +43,32 @@ public class HomeWork_GeneralApplications {
         System.out.println("\nhours "+minutesAll);
         System.out.println("\nMinutes "+secondsAll);
 
+    }
+    public static void main(String[] args){
+
+        System.out.println("Exercises with time");
+
+        System.out.println("Converrting seconds.\nEnter value seconds =");
+        double seconds = scanner.nextDouble();
+        convertingSeconds(seconds);
+
+        int currentYear = 2019;
+        int birthYear = 1996;
+        convertinTIme(currentYear,birthYear);
+
         System.out.println("Exercises with conversions");
 
-        Scanner inputX = new Scanner(System.in);
-
         System.out.println("Enter value x: ");
-        double x = inputX.nextDouble();
-
-        Scanner inputY = new Scanner(System.in);
+        double x = scanner.nextDouble();
 
         System.out.println("Enter value y: ");
-        double y = inputY.nextDouble();
+        double y = scanner.nextDouble();
 
-        double percent = ((y-x)/x) * 100;
-        System.out.println(Math.round(percent));
+        System.out.println(conversions(x,y));
 
         System.out.println("Exercises with Multiple choice test score");
         int a = 6;
         double b = 3.4;
-        double c = (double) a - (double)(1.0/4.0)*b;
-        System.out.println(c);
+        System.out.println(multipleChoice(a,b));
     }
 }
