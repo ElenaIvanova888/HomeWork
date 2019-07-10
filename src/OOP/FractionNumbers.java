@@ -64,6 +64,15 @@ public class FractionNumbers {
 		return inverted;
 	}
 
+	@Override
+	public boolean equals(Object o){
+		if(!(o instanceof FractionNumbers)){
+			return false;
+		}
+		FractionNumbers fractionNumbers = (FractionNumbers) o;
+		return denominator == fractionNumbers.denominator &&
+				numerator == fractionNumbers.numerator;
+	}
 
 
 	@Override
