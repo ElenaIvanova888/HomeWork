@@ -2,11 +2,12 @@ package TLogger;
 import java.io.*;
 
 public class FileTestLogger extends TestLogger implements ITestLogger {
+
 	@Override
 	protected String vivodLog(String message) {
 		try(FileWriter writer = new FileWriter("Text.txt", false))
 		{
-			writer.write("LOG in file: "+message+"  -   "+dateFormat.format(date));
+			writer.write("LOG in file: "+message+"  -   "+dateFormat.format(date)+" "+Thread.currentThread().getName());
 			writer.flush();
 		}
 		catch(IOException ex){
@@ -20,4 +21,10 @@ public class FileTestLogger extends TestLogger implements ITestLogger {
 	public void dateformat() {
 
 	}
+
+	@Override
+	public void threadName() {
+
+	}
+
 }
