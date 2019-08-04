@@ -1,7 +1,9 @@
 package infrastrcutre.webbdrivers;
 
+import infrastrcutre.URLBuilder;
+
 public interface IWebDriver {
-	void open(String url);
+	void open(URLBuilder creationURL);
 	void click();
 	void sendKeys(String sendKeys);
 }
